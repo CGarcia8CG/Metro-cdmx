@@ -7,12 +7,15 @@ from io_utils import load_graph
 import matplotlib.colors as mcolors
 import pandas as pd
 import streamlit as st
+import os
 
 # Cargar configuración
 config = Config()
 
 # Cargar el grafo
-metro_graph = load_graph(config.output_data_dir+'\metro_graph.pkl')
+#metro_graph = load_graph(config.output_data_dir+'\metro_graph.pkl')
+metro_graph = load_graph(os.path.join(config.output_data_dir,'metro_graph.pkl'))
+
 #print(metro_graph.nodes['pantitlan'])
 
 # --- SIDEBAR INTERACTIVO ---
