@@ -1,4 +1,3 @@
-import streamlit as st
 import geopandas as gpd
 import folium
 from streamlit_folium import st_folium
@@ -7,6 +6,7 @@ from config import Config
 from io_utils import load_graph
 import matplotlib.colors as mcolors
 import pandas as pd
+import streamlit as st
 
 # Cargar configuración
 config = Config()
