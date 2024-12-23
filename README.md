@@ -48,6 +48,6 @@ Este proyecto analiza la red del **Metro de la Ciudad de México** utilizando m�
 ## Contacto
 
 Nombre: Carlos David García Hernández
-Correo: ** [carlos.garcia.economist@gmail.com](mailto:carlos.garcia.economist@gmail.com)  
+Correo: [carlos.garcia.economist@gmail.com](mailto:carlos.garcia.economist@gmail.com)  
 LinkedIn: [LinkedIn](https://www.linkedin.com/in/cgarcia8cg/)
 GitHub: [GitHub](https://cgarcia8cg.github.io/)
