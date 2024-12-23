@@ -35,3 +35,19 @@ Este proyecto analiza la red del **Metro de la Ciudad de México** utilizando m�
 
 ## **Requisitos del Proyecto**
 ### **Dependencias de Python (requirements.txt)**
+
+### Uso de la Aplicación
+
+1. Selector de Centralidades: Cambia entre diferentes métricas de centralidad para analizar los nodos.
+
+2. Mapas Interactivos: Visualiza estaciones con colores tipo semáforo y tamaños proporcionales a su relevancia.
+
+3. Tablas de Resultados: Consulta las 5 estaciones con mayor y menor centralidad.
+
+
+## Contacto
+
+Nombre: Carlos David García Hernández
+Correo: ** [carlos.garcia.economist@gmail.com](mailto:carlos.garcia.economist@gmail.com)  
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/cgarcia8cg/)
+GitHub: [GitHub](https://cgarcia8cg.github.io/)
