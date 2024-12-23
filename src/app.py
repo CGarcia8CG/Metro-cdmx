@@ -25,7 +25,7 @@ with st.sidebar:
     st.markdown("## Acerca de Mí")
     st.write("""
     **Nombre:** Carlos David García Hernández  
-    **Rol:** Data Scientist  
+    **Rol:** Data Scientist @ Tec de Monterrey y Docente analísis economico regional @ Universidad Nacional Autónoma de México
     **Contacto:** [carlos.garcia.economist@gmail.com](mailto:carlos.garcia.economist@gmail.com)  
     """)
 
@@ -45,9 +45,9 @@ with st.sidebar:
     """)
 
     st.write("**Objetivos:**")
-    st.markdown("- Identificar estaciones críticas por centralidad.")
+    st.markdown("- Identificar estaciones críticas por diversas métricas de centralidad.")
     st.markdown("- Visualizar patrones de movilidad.")
-    st.markdown("- Proponer ubicaciones óptimas para nuevas estaciones.")
+    st.markdown("- Reflexionar sobre políticas públicas para mejorar el sistema de movilidad.")
 
     st.write("---")
     st.write("Explora los resultados en el mapa interactivo y analiza las métricas seleccionadas.")
@@ -131,7 +131,7 @@ for u, v, data in metro_graph.edges(data=True):
     folium.PolyLine(coords, color="gray", weight=3, opacity=0.7).add_to(m)
 
 # Mostrar el mapa
-st_folium(m, width=800, height=600)
+st_folium(m, width=700, height=600)
 
 # ---- Tablas con las estaciones ----
 # Crear DataFrame con la información de centralidad
