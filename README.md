@@ -11,26 +11,9 @@ Este proyecto analiza la red del **Metro de la Ciudad de México** utilizando m�
 ---
 
 ## **Estructura del Proyecto**
-/ (root)
-├── packages.txt                  # Dependencias del sistema operativo
-├── src/                          # Código fuente
-│   ├── init.py
-│   ├── config.py                 # Configuración del proyecto
-│   ├── io_utils.py               # Manejo de datos y gráficos
-│   ├── preprocessing.py          # Preprocesamiento de datos
-│   ├── graph_utils.py            # Funciones para creación de grafos
-│   ├── app.py                    # Aplicación principal de Streamlit
-│   ├── requirements.txt          # Dependencias de Python
-│   ├── runner.py                 # Archivo (pipe) para construir la red
-│   ├── test_network.py           # Archivo de prueba de la red
-├── input_data/                   # Datos de entrada
-│   ├── stations.geojson          # Estaciones del metro
-│   ├── metro_lines.geojson       # Líneas del metro
-│   ├── cropped_photo.jpg         # Foto del perfil
-├── output_data/                  # Datos generados como resultados
-├── README.md                     # Documentación general
-├── notebooks/                    # Notebooks para análisis exploratorio
-├── .env/                         # env pydantic
+
+![codebase][input_data/codebase.jpg", width=150]
+
 ---
 
 ## **Requisitos del Proyecto**
