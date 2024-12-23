@@ -12,7 +12,7 @@ Este proyecto analiza la red del **Metro de la Ciudad de M√©xico** utilizando m√
 
 ## **Estructura del Proyecto**
 
-![codebase][input_data/codebase.jpg]
+![codebase](input_data/codebase.jpg)
 
 ---
 
