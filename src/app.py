@@ -25,7 +25,9 @@ with st.sidebar:
     st.markdown("## Acerca de Mí")
     st.write("""
     **Nombre:** Carlos David García Hernández  
-    **Rol:** Data Scientist @ Tec de Monterrey y Docente de analísis economico regional @ Universidad Nacional Autónoma de México
+    **Rol:** Data Scientist @ Tec de Monterrey
+             Docente de analísis economico regional @ Universidad Nacional Autónoma de México
+             
     **Contacto:** [carlos.garcia.economist@gmail.com](mailto:carlos.garcia.economist@gmail.com)  
     """)
 
@@ -34,6 +36,7 @@ with st.sidebar:
     st.markdown("[LinkedIn](https://www.linkedin.com/in/cgarcia8cg/)")  # Cambia tu URL
     st.markdown("[GitHub](https://cgarcia8cg.github.io/)")  # Cambia tu URL
 
+    st.write("---")
 
     # Información sobre el Proyecto
     st.markdown("## Sobre el Proyecto")
