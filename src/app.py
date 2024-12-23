@@ -25,7 +25,7 @@ with st.sidebar:
     st.markdown("## Acerca de Mí")
     st.write("""
     **Nombre:** Carlos David García Hernández  
-    **Rol:** Data Scientist @ Tec de Monterrey y Docente analísis economico regional @ Universidad Nacional Autónoma de México
+    **Rol:** Data Scientist @ Tec de Monterrey y Docente de analísis economico regional @ Universidad Nacional Autónoma de México
     **Contacto:** [carlos.garcia.economist@gmail.com](mailto:carlos.garcia.economist@gmail.com)  
     """)
 
