@@ -152,12 +152,10 @@ col1, col2 = st.columns(2)
 
 # Tabla de mayores valores
 with col1:
-    st.write(f"""### Top 5 Stations - 
-             {centrality_option.capitalize()}""")
+    st.write(f"### Top 5 Stations -<br> {centrality_option.capitalize()}", unsafe_allow_html=True)
     st.table(top_stations)
 
 # Tabla de menores valores
 with col2:
-    st.write(f"""### Bottom 5 Stations -
-             {centrality_option.capitalize()}""")
+    st.write(f"### Bottom 5 Stations -<br> {centrality_option.capitalize()}", unsafe_allow_html=True)
     st.table(bottom_stations)
