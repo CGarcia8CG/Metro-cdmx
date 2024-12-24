@@ -22,24 +22,24 @@ metro_graph = load_graph(os.path.join(config.output_data_dir,'metro_graph.pkl'))
 with st.sidebar:
     # Foto e Información Personal
     st.image("input_data/cropped_carlos.png", width=150)  # Cambia por tu foto
-    st.markdown("## Acerca de Mí")
+    st.markdown("## About Me:")
     st.write("""
-    **Nombre:** Carlos David García Hernández  
+    **Name:** Carlos David García Hernández  
     **Rol:** Data Scientist @ Tec de Monterrey
-             Docente de analísis economico regional @ Universidad Nacional Autónoma de México
+             Teacher of regional economic analysis @ Universidad Nacional Autónoma de México
              
-    **Contacto:** [carlos.garcia.economist@gmail.com](mailto:carlos.garcia.economist@gmail.com)  
+    **Contact:** [carlos.garcia.economist@gmail.com](mailto:carlos.garcia.economist@gmail.com)  
     """)
 
     # Enlace a LinkedIn
-    st.markdown("### Conéctate conmigo:")
+    st.markdown("### Connect with me:")
     st.markdown("[LinkedIn](https://www.linkedin.com/in/cgarcia8cg/)")  # Cambia tu URL
     st.markdown("[GitHub](https://cgarcia8cg.github.io/)")  # Cambia tu URL
 
     st.write("---")
 
     # Información sobre el Proyecto
-    st.markdown("## Sobre el Proyecto")
+    st.markdown("## About the proyect")
     st.write("""
     Este proyecto analiza la red del metro de la CDMX utilizando 
     métricas de **centralidad** para identificar estaciones clave.  
@@ -47,7 +47,7 @@ with st.sidebar:
     para visualizaciones geoespaciales interactivas.
     """)
 
-    st.write("**Objetivos:**")
+    st.write("**Objectives:**")
     st.markdown("- Identificar estaciones críticas por diversas métricas de centralidad.")
     st.markdown("- Visualizar patrones de movilidad.")
     st.markdown("- Reflexionar sobre políticas públicas para mejorar el sistema de movilidad.")
@@ -56,11 +56,11 @@ with st.sidebar:
     st.write("Explora los resultados en el mapa interactivo y analiza las métricas seleccionadas.")
 
 # Título de la App
-st.title("Visualización del Metro CDMX - Centralidades")
+st.title("Mexico City Metro - Network Centrality")
 
 # Selector para elegir la centralidad
 centrality_option = st.selectbox(
-    "Selecciona la centralidad para visualizar:",
+    "Select you measure of centrality for visualization:",
     options=["closeness", "betweenness", "eigenvector", "pagerank"]
 )
 
@@ -152,10 +152,10 @@ col1, col2 = st.columns(2)
 
 # Tabla de mayores valores
 with col1:
-    st.write(f"### Top 5 Estaciones - {centrality_option.capitalize()}")
+    st.write(f"### Top 5 Stations - {centrality_option.capitalize()}")
     st.table(top_stations)
 
 # Tabla de menores valores
 with col2:
-    st.write(f"### Bottom 5 Estaciones - {centrality_option.capitalize()}")
+    st.write(f"### Bottom 5 Stations - {centrality_option.capitalize()}")
     st.table(bottom_stations)
