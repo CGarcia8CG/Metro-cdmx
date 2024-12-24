@@ -56,7 +56,7 @@ with st.sidebar:
     st.write("Explora los resultados en el mapa interactivo y analiza las métricas seleccionadas.")
 
 # Título de la App
-st.title("Mexico City Metro - Network Centrality")
+st.title("Visualización del Metro CDMX - Centralidades")
 
 # Selector para elegir la centralidad
 centrality_option = st.selectbox(
@@ -152,10 +152,10 @@ col1, col2 = st.columns(2)
 
 # Tabla de mayores valores
 with col1:
-    st.write(f"### Top 5 Stations - {centrality_option.capitalize()}")
+    st.write(f"### Top 5 Estaciones - {centrality_option.capitalize()}")
     st.table(top_stations)
 
 # Tabla de menores valores
 with col2:
-    st.write(f"### Bottom 5 Stations - {centrality_option.capitalize()}")
+    st.write(f"### Bottom 5 Estaciones - {centrality_option.capitalize()}")
     st.table(bottom_stations)
