@@ -56,7 +56,7 @@ with st.sidebar:
     st.write("Explora los resultados en el mapa interactivo y analiza las métricas seleccionadas.")
 
 # Título de la App
-st.title("Visualización del Metro CDMX - Centralidades")
+st.title("Mexico City Metro Network Centralities")
 
 # Selector para elegir la centralidad
 centrality_option = st.selectbox(
