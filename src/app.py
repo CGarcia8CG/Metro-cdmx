@@ -41,19 +41,17 @@ with st.sidebar:
     # Información sobre el Proyecto
     st.markdown("## About the proyect")
     st.write("""
-    Este proyecto analiza la red del metro de la CDMX utilizando 
-    métricas de **centralidad** para identificar estaciones clave.  
-    Se basa en bibliotecas como **GeoPandas**, **NetworkX** y **Folium** 
-    para visualizaciones geoespaciales interactivas.
+    This project analyzes the CDMX metro network using centrality metrics to identify key stations.
+    It is based on libraries such as **GeoPandas**, **NetworkX** and **Folium** for interactive geospatial visualizations.
     """)
 
     st.write("**Objectives:**")
-    st.markdown("- Identificar estaciones críticas por diversas métricas de centralidad.")
-    st.markdown("- Visualizar patrones de movilidad.")
-    st.markdown("- Reflexionar sobre políticas públicas para mejorar el sistema de movilidad.")
+    st.markdown("- Identify critical stations by various centrality metrics.")
+    st.markdown("- Visualize mobility patterns.")
+    st.markdown("- Reflect on public policies to improve the mobility system.")
 
     st.write("---")
-    st.write("Explora los resultados en el mapa interactivo y analiza las métricas seleccionadas.")
+    st.write("Explore the results on the interactive map and analyze selected metrics.")
 
 # Título de la App
 st.title("Mexico City Metro Network Centralities")
@@ -118,10 +116,10 @@ for i, node in enumerate(nodes_info):
         fill_opacity=0.6,
         popup=(
             f"<b>{node['name']}</b><br>"
-            f"Línea: {node['linea']}<br>"
-            f"Tipo: {node['tipo']}<br>"
-            f"Afluencia: {node['afluencia']}<br>"
-            f"Centralidad ({centrality_option}): {node['centrality']:.4f}"
+            f"Line: {node['linea']}<br>"
+            f"Station type: {node['tipo']}<br>"
+            f"Influx: {node['afluencia']}<br>"
+            f"Centrality ({centrality_option}): {node['centrality']:.4f}"
         ),
     ).add_to(m)
 
